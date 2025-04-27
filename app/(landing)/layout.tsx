@@ -1,5 +1,3 @@
-// import { getApiLimitCount } from "@/lib/api-limit";
-
 import { Suspense } from "react";
 import Footer from "../_components/footer/Footer";
 import Navbar from "../_components/navbar/Navbar";
@@ -13,9 +11,7 @@ const DashboardLayout = async ({ children }: { children: React.ReactNode }) => {
       </div>
 
       <div className="sm:pt-[105px] overflow-hidden pt-16 h-full w-screen min-h-screen">
-        <Suspense fallback={<Loading/>} >
-        {children}
-        </Suspense>
+        <Suspense fallback={<Loading />}>{children}</Suspense>
         <Footer />
       </div>
     </div>

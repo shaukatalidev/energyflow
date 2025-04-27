@@ -18,7 +18,14 @@ import {
   TwitterIcon,
 } from "lucide-react";
 import Link from "next/link";
-import { useCurrentUser } from "@/hooks/useCurrentUser";
+
+const useCurrentUser = () => {
+  return {
+    id: 8239581294,
+    name: "John Doe",
+    email: "john@gmail.com",
+  };
+};
 
 const Footer: React.FC = () => {
   const user = useCurrentUser();

@@ -11,8 +11,6 @@ import { useRouter, useSearchParams } from "next/navigation";
 import toast from "react-hot-toast";
 import SocialAuthButton from "./SocialAuthButton";
 
-import { login } from "@/action/login";
-
 interface AuthenticationModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -28,46 +26,6 @@ const AuthenticationModal: React.FC<AuthenticationModalProps> = ({
   const [ph, setPh] = useState("");
   const searchParams = useSearchParams();
   const callbackUrl = searchParams.get("callbackUrl");
-
-  const handleSendCode = async () => {
-    setLoading(true);
-    toast.error("Please use other options. There is a server problem");
-
-    const formatPh = "+" + ph;
-    // await axios
-    //   .post("/api/auth/sms", {
-    //     mobile: formatPh,
-    //   })
-    //   .then((res) => {
-    //     if (res.status === 200) {
-    //       setShowOTP(true);
-    //       toast.success("OTP sendt successfully!");
-    //     } else {
-    //       toast.error("Failed to send OTP!");
-    //     }
-    //   });
-    setLoading(false);
-  };
-
-  const handleVerifyCode = () => {
-    setLoading(true);
-    const values = {
-      mobile: parseInt(ph),
-      otp: otp,
-    };
-    startTransition(() => {
-      login(values, callbackUrl)
-        .then((data) => {
-          if (data?.error) {
-            setOtp("");
-            toast.error(data.error);
-          } else {
-            toast.success("Login successfully!");
-          }
-        })
-        .catch(() => toast.error("Something went wrong"));
-    });
-  };
 
   return (
     <Modal isOpen={isOpen} onClose={onClose}>
@@ -112,7 +70,7 @@ const AuthenticationModal: React.FC<AuthenticationModalProps> = ({
                 }}
               />
               <Button
-                onClick={handleVerifyCode}
+                // onClick={handleVerifyCode}
                 className="bg-[#50b8e7] hover:text-[#50b8e7] hover:border-2 border-[#50b8e7] w-full flex gap-1 items-center justify-center py-2.5 text-white rounded-xl"
               >
                 {loading && (
@@ -144,7 +102,7 @@ const AuthenticationModal: React.FC<AuthenticationModalProps> = ({
               />
 
               <Button
-                onClick={handleSendCode}
+                // onClick={handleSendCode}
                 id="send-code-button"
                 className="bg-[#50b8e7] hover:text-[#50b8e7] hover:border-2 border-[#50b8e7] w-full flex gap-1 items-center justify-center py-3 text-white rounded-xl"
               >
