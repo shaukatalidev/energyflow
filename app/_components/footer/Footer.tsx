@@ -2,7 +2,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Counter from "./Counter";
-import AuthenticationModal from "@/components/AuthenticationModal";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 
@@ -57,7 +56,6 @@ const Footer: React.FC = () => {
         <div className="mx-auto max-w-screen-md">
           <Counter />
         </div>
-        <AuthenticationModal isOpen={isOpen} onClose={onClose} />
 
         <div className="flex flex-col md:flex-row  w-full justify-around mb-5">
           <div className="flex flex-col gap-2 justify-start items-start">

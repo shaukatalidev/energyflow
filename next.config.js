@@ -1,12 +1,27 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: [
-      "picsum.photos",
-      "images.unsplash.com",
-      "lh3.googleusercontent.com",
-      "platform-lookaside.fbsbx.com",
-      "firebasestorage.googleapis.com",
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "picsum.photos",
+      },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+      {
+        protocol: "https",
+        hostname: "lh3.googleusercontent.com",
+      },
+      {
+        protocol: "https",
+        hostname: "platform-lookaside.fbsbx.com",
+      },
+      {
+        protocol: "https",
+        hostname: "firebasestorage.googleapis.com",
+      },
     ],
   },
 };
