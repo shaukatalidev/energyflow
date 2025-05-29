@@ -17,7 +17,7 @@ const GetInTouchPage = () => {
         <div className="flex flex-col md:flex-row">
           {/* Form Section */}
           <div className="p-10 md:w-1/2">
-            <h1 className="text-2xl font-medium">
+            <h1 className="text-4xl font-medium">
               Get in <span className="text-teal-400">touch</span>
             </h1>
             
@@ -68,7 +68,7 @@ const GetInTouchPage = () => {
               
               <Button 
                 type="submit" 
-                className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-md mt-8"
+                className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-full mt-8 "
               >
                 Submit
               </Button>
