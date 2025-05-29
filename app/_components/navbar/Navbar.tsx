@@ -180,9 +180,9 @@ const Navbar = () => {
           <CustomLink title="About Us" href="/about" className="mx-4" />
           <CustomLink title="Our Store" href="/store" className="ml-4" />
         </div>
-        <span className=" mr-5">
+        {/* <span className=" mr-5">
           <UserMenuButton />
-        </span>
+        </span> */}
       </nav>
     </div>
   );
