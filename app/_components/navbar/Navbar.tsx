@@ -38,9 +38,8 @@ const CustomLink: React.FC<CustomLinkProps> = ({
   return (
     <Link href={href} className={`${className} relative group`}>
       <p
-        className={`${
-          mobile ? "text-3xl" : "text-lg"
-        } text-mainColor font-semibold`}
+        className={`${mobile ? "text-3xl" : "text-lg"
+          } text-mainColor font-semibold`}
       >
         {Icon && (
           <Icon size={40} className={`${color} inline-block mr-8 text-lg`} />
@@ -94,18 +93,23 @@ const Navbar = () => {
     <div className="w-full mx-auto max-w-screen-2xl  flex lg:flex-row flex-col ">
       <div className="lg:w-[30%]  hidden w-full mx-auto  lg:flex justify-center items-center">
         <div className="w-[100px] h-[50px] md:w-[200px] md:h-[100px] relative">
-          <a href="/">
-            <Image
-              src="/MainLogo3.png"
-              fill
-              priority
-              style={{
-                objectFit: "contain",
-              }}
-              sizes="100"
-              alt={"logo"}
-            />
-          </a>
+          <Link href="/">
+            <span className=" mb-4 pb-5">
+
+              <Image
+                src="/MainLogo4.jpg"
+                priority
+                style={{
+                  objectFit: "contain",
+                }}
+                sizes="100"
+                fill
+                alt={"logo"}
+
+                className=" "
+              />
+            </span>
+          </Link>
         </div>
         <div className="w-1 hidden sm:block rounded-xl h-3/4 ml-[2px] mr-1 bg-mainColor/50" />
         <h1 className="text-sm hidden sm:block xl:text-lg font-semibold text-mainColor">
@@ -171,13 +175,14 @@ const Navbar = () => {
         </div>
       </div>
       <nav className="lg:w-[70%] hidden w-full mx-auto lg:flex lg:justify-between justify-around items-center">
-        <div className="w-full gap-2 flex justify-around items-center">
+        <div className="w-full gap-2 flex justify-end pr-4 mr-4 ">
           <CustomLink title="Home" href="/" className="mr-4" />
           <CustomLink title="About Us" href="/about" className="mx-4" />
           <CustomLink title="Our Store" href="/store" className="ml-4" />
-
-          <UserMenuButton />
         </div>
+        <span className=" mr-5">
+          <UserMenuButton />
+        </span>
       </nav>
     </div>
   );

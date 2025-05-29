@@ -1,5 +1,4 @@
 "use client";
-import AutoplayCarousel from "./AutoplayCarousel";
 import AnimatedText from "./AnimatedText";
 import VideoBg from "@/components/VideoBg";
 
@@ -33,7 +32,7 @@ const LogoComponent = () => {
 
       <div className="grid grid-cols-12 justify-between items-center gap-2 w-full">
         <div className="relative hidden md:block h-[50vh] sm:h-[30vh]  md:h-full col-span-12 sm:col-span-6 md:col-span-3">
-          <AutoplayCarousel items={slides1} />
+          {/* <AutoplayCarousel items={slides1} /> */}
         </div>
         {/* <div
           className="h-[50vh] md:h-full col-span-12 md:col-span-6"
@@ -52,14 +51,14 @@ const LogoComponent = () => {
             </div>
           </div>
         </div> */}
-        <div className="md:col-span-6 col-span-12">
+        <div className="p-2 col-span-12 w-fit h-fit">
           <VideoBg />
         </div>
         <div className="relative hidden sm:block md:hidden  h-[40vh] sm:h-[30vh]  md:h-full col-span-12 sm:col-span-6 md:col-span-3">
-          <AutoplayCarousel items={slides1} />
+          {/* <AutoplayCarousel items={slides1} /> */}
         </div>
         <div className="relative h-[40vh] sm:h-[30vh]  md:h-full col-span-12 sm:col-span-6 md:col-span-3">
-          <AutoplayCarousel items={slides2} />
+          {/* <AutoplayCarousel items={slides2} /> */}
         </div>
       </div>
       <AnimatedText

@@ -1,4 +1,6 @@
 import profilePicPlaceholder from "@/public/profile-pic-placeholder.png";
+import threedashed from "@/public/three-dashed.png"
+
 
 import Image from "next/image";
 
@@ -10,7 +12,7 @@ const useCurrentUser = () => {
     id: 8239581294,
     name: "John Doe",
     email: "john@gmail.com",
-    image: "/profile-pic-placeholder.png",
+    image: "/three-dashed.png",
   };
 };
 export function UserMenuButton() {
@@ -18,13 +20,15 @@ export function UserMenuButton() {
   return (
     <>
       {user ? (
-        <Image
-          src={user?.image || profilePicPlaceholder}
-          alt="Profile picture"
-          width={40}
-          height={40}
-          className="w-10 rounded-full"
-        />
+   
+          <Image
+            src={user?.image || threedashed}
+            alt="Profile picture"
+            width={40}
+            height={40}
+            className="w-10 rounded-full"
+          />
+    
       ) : (
         <svg
           xmlns="http://www.w3.org/2000/svg"
