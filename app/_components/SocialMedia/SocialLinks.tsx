@@ -75,7 +75,7 @@ const FrameComponent16: NextPage<FrameComponent16Type> = ({
             height={182}
             sizes="100vw"
             alt=""
-            src="/MainLogo4.png"
+            src="/MainLogo4.jpg"
           />
         </div>
       </div>

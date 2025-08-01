@@ -10,193 +10,212 @@ const FrameComponent10: NextPage<FrameComponent10Type> = ({
 }) => {
     return (
         <div
-            className={`self-stretch flex flex-col items-start justify-start gap-[66px] max-w-full mq800:gap-[33px] mq450:gap-4 ${className}`}
+            className={`[background:radial-gradient(50%_50%_at_50%_50%,_#bbdfed,_#74c6f3)] py-6 sm:py-8 md:py-12 self-stretch flex flex-col items-start justify-start gap-8 sm:gap-12 md:gap-16 lg:gap-[66px] max-w-full px-4 sm:px-6 lg:px-8 ${className}`}
         >
-            <div className="flex flex-row items-center justify-center gap-[42px] max-w-full z-[2] mq800:gap-[21px] mq1350:flex-wrap">
-                <div className="h-[65px] w-[62px] relative">
-                    <div className="absolute top-[0px] left-[0px] shadow-[4px_2px_7px_1px_rgba(0,_0,_0,_0.25)] rounded-[20px] bg-[#fffafa] w-full h-full hidden" />
-                    <div className="absolute top-[33.7px] left-[16.3px] w-[28.9px] h-[0.7px] z-[1] overflow-hidden flex items-center justify-center">
-                        <Image
-                            className="w-full h-full z-[1] object-cover absolute left-[-1px] top-[0px] [transform:scale(31.571)]"
-                            width={28.9}
-                            height={0.7}
-                            sizes="100vw"
-                            alt=""
-                            src="/quote-left.png"
-                        />
-                    </div>
-                </div>
-                <div className=" w-full relative shadow-[1px_3px_5px_6px_rgba(0,_0,_0,_0.25)] rounded-[20px] bg-[#fff] font-[501px]">
-                
-                <section className="h-[501px] w-[571px] relative max-w-full text-center text-[40px] text-[#000] font-['Inria_Serif']">
-                    <div className="absolute top-[0px] left-[0px] shadow-[1px_3px_5px_6px_rgba(0,_0,_0,_0.25)] rounded-[20px] bg-white w-full h-full hidden" />
-                    
-                    <div className="absolute top-[31px] left-[32px] flex flex-col items-end justify-start gap-[23px]">
-                        <div className="flex flex-row items-start justify-end py-0 pl-3 pr-[7px]">
-                            <h2 className="m-0 h-[49px] w-[493px] relative text-[length:inherit] font-bold font-[inherit] inline-block z-[1] mq800:text-[32px] mq450:text-2xl">
-                                Hotel Prince
-                            </h2>
-                        </div>
-                        <div className="flex flex-col items-start justify-start gap-[17px] text-[25px]">
-                            <Image
-                                className="w-12 h-9 relative object-cover z-[1]"
-                                width={48}
-                                height={36.3}
-                                sizes="100vw"
-                                alt=""
-                                src="/quote-left.png"
-                            />
-                            <div className="flex flex-row items-start justify-start py-0 pl-1.5 pr-0">
-                                <h3 className="m-0 h-[257px] w-[506px] relative text-[length:inherit] font-normal font-[inherit] whitespace-pre-wrap inline-block z-[1] mq450:text-xl">
-                                    {`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut  aliquip ex ecommodo consequat. Duis aute irure dolor in reprehenderit `}
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <Image
-                        className="absolute top-[362px] left-[477px] w-[53px] h-[36.3px] object-contain"
-                        width={53}
-                        height={36.3}
-                        sizes="100vw"
-                        alt=""
-                        src="/quote-right.png"
-                    />
-                    <div className="absolute top-[425px] left-[32px] w-[331px] flex flex-row items-start justify-end">
-                        <div className="flex flex-row items-start justify-start gap-[9px]">
-                            <div className="flex flex-col items-start justify-start py-0 pl-0 pr-1">
-                                <Image
-                                    className="w-full h-[37px] relative z-[1]"
-                                    width={31}
-                                    height={37}
-                                    sizes="100vw"
-                                    alt=""
-                                    src="/star.jpg"
-                                />
-                            </div>
-                            <div className="flex flex-col items-start justify-start py-0 pl-0 pr-[5px]">
-                                <Image
-                                    className="w-full h-[37px] relative z-[1]"
-                                    width={31}
-                                    height={37}
-                                    sizes="100vw"
-                                    alt=""
-                                    src="/star.jpg"
-                                />
-                            </div>
-                            <Image
-                                className="h-[37px] w-[30px] relative z-[1]"
-                                width={30}
-                                height={37}
-                                sizes="100vw"
-                                alt=""
-                                src="/star.jpg"
-                            />
-                            <Image
-                                className="h-[37px] w-[31px] relative z-[1]"
-                                width={31}
-                                height={37}
-                                sizes="100vw"
-                                alt=""
-                                src="/star.jpg"
-                            />
-                        </div>
-                    </div>
-                </section>
-                </div>
-                <div className=" w-full relative shadow-[1px_3px_5px_6px_rgba(0,_0,_0,_0.25)] rounded-[20px] bg-[#fff] font-[501px]">
-
-                
-                <section className="h-[501px] w-[571px] relative max-w-full text-center justify-self-center text-[25px] text-[#000] font-['Inria_Serif']">
-                    <div className="absolute top-[0px] left-[0px] shadow-[1px_3px_5px_6px_rgba(0,_0,_0,_0.25)] rounded-[20px] bg-white w-full h-full hidden" />
-                    <div className="absolute top-[155px] left-[20px] flex flex-row items-start justify-start py-0 pl-2 pr-0">
-                        <h3 className="m-0 h-[257px] w-[506px] relative text-[length:inherit] font-normal font-[inherit] whitespace-pre-wrap inline-block z-[1] mq450:text-xl">
-                            {`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut  aliquip ex ecommodo consequat. Duis aute irure dolor in reprehenderit `}
-
-                        </h3>
-                    </div>
-                    <h2 className="m-0 absolute top-[42px] left-[20px] text-[40px] font-bold font-[inherit] z-[1] mq800:text-[32px] mq450:text-2xl">
-                        Hotel Prince
+            {/* Header Section */}
+            <div className="w-full flex flex-row items-center justify-center">
+                <div className="relative shadow-[0px_4px_10px_rgba(0,_0,_0,_0.25)] [backdrop-filter:blur(200px)] rounded-[25px] sm:rounded-[35px] lg:rounded-[50px] bg-steelblue-200 border-blue-800 border-solid border-[1px] box-border px-4 sm:px-6 lg:px-8 py-2 sm:py-3 lg:py-4">
+                    <h2 className="m-0 text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-[-0.03em] leading-tight font-bold text-center whitespace-nowrap">
+                        <span className="text-[#01b6f4]">User </span>
+                        <span className="text-[#0083cb]">Testimonials</span>
                     </h2>
-                    <div className="absolute top-[106px] left-[20px] flex flex-row items-start justify-start py-0 pl-2 pr-0">
+                </div>
+            </div>
+
+            {/* Subtitle Section */}
+            <div className="w-full flex items-center justify-center px-4">
+                <div className="max-w-4xl text-center">
+                    <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-[-0.03em] leading-tight font-semibold font-poppins text-darkslategray">
+                        What our customers say about us
+                    </h3>
+                </div>
+            </div>
+
+            {/* Testimonials Container */}
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-6 sm:gap-8 lg:gap-[42px] max-w-full z-[2] w-full">
+                {/* Left Arrow Icon */}
+                <div className="h-[50px] w-[50px] sm:h-[60px] sm:w-[60px] lg:h-[65px] lg:w-[62px] relative flex-shrink-0 hidden lg:block cursor-pointer hover:scale-105 transition-transform">
+                    <div className="absolute top-[0px] left-[0px] shadow-[4px_2px_7px_1px_rgba(0,_0,_0,_0.25)] rounded-[15px] lg:rounded-[20px] bg-[#fffafa] w-full h-full" />
+                    <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[20px] sm:w-[25px] lg:w-[28.9px] h-[15px] sm:h-[18px] lg:h-[20px] z-[1] flex items-center justify-center">
                         <Image
-                            className="h-9 w-full relative object-cover z-[1]"
-                            width={48}
-                            height={36}
+                            className="w-full h-full object-contain"
+                            width={29}
+                            height={20}
                             sizes="100vw"
-                            alt=""
-                            src="/quote-right.png"
+                            alt="Previous testimonial"
+                            src="/ArrowLeft.svg"
                         />
                     </div>
-                    <Image
-                        className="absolute top-[362px] left-[486px] w-[53px] h-[36.3px] object-contain"
-                        width={53}
-                        height={36}
-                        sizes="100vw"
-                        alt=""
-                        src="/quote-right.png"
-                    />
-                    <div className="absolute top-[425px] left-[20px] w-[340px] flex flex-row items-start justify-end">
-                        <div className="flex flex-row items-start justify-start gap-[9px]">
-                            <div className="flex flex-col items-start justify-start py-0 pl-0 pr-1">
-                                <Image
-                                    className="w-full h-[37px] relative z-[1]"
-                                    width={31}
-                                    height={37}
-                                    sizes="100vw"
-                                    alt=""
-                                    src="/star.jpg"
-                                />
-                            </div>
-                            <div className="flex flex-col items-start justify-start py-0 pl-0 pr-[5px]">
-                                <Image
-                                    className="w-full h-[37px] relative z-[1]"
-                                    width={31}
-                                    height={37}
-                                    sizes="100vw"
-                                    alt=""
-                                    src="/star.jpg"
-                                />
-                            </div>
-                            <Image
-                                className="h-[37px] w-[30px] relative z-[1]"
-                                width={30}
-                                height={37}
-                                sizes="100vw"
-                                alt=""
-                                src="/star.jpg"
-                            />
-                            <Image
-                                className="h-[37px] w-[31px] relative z-[1]"
-                                width={31}
-                                height={37}
-                                sizes="100vw"
-                                alt=""
-                                src="/star.jpg"
-                            />
-                        </div>
-                    </div>
-                </section>
                 </div>
-                <div className="h-[65px] w-[59px] relative">
-                    <div className="absolute top-[65px] left-[59px] shadow-[4px_2px_7px_1px_rgba(0,_0,_0,_0.25)] rounded-[20px] bg-[#fffafa] w-full h-full [transform:_rotate(180deg)] [transform-origin:0_0]" />
-                    <div className="absolute top-[31.7px] left-[16.7px] w-[27.5px] h-[0.7px] z-[1] overflow-hidden flex items-center justify-center">
+
+                {/* Testimonials Grid */}
+                <div className="flex flex-col xl:flex-row gap-6 sm:gap-8 lg:gap-12 w-full max-w-7xl">
+                    {/* First Testimonial */}
+                    <div className="w-full max-w-none xl:max-w-[571px] relative shadow-[1px_3px_5px_6px_rgba(0,_0,_0,_0.25)] rounded-[15px] sm:rounded-[20px] bg-[#fff] mx-auto">
+                        <section className="min-h-[350px] sm:min-h-[400px] lg:h-[501px] w-full relative text-center text-[#000] font-['Inria_Serif'] p-4 sm:p-6 lg:p-8">
+                            <div className="flex flex-col items-center justify-start gap-4 sm:gap-6 lg:gap-[23px] relative z-[1] h-full">
+                                <div className="w-full">
+                                    <h2 className="m-0 text-xl sm:text-2xl md:text-3xl lg:text-[32px] xl:text-[40px] font-bold font-[inherit] mb-2 sm:mb-4">
+                                        Hotel Prince
+                                    </h2>
+                                </div>
+                                <div className="flex flex-col items-start justify-start gap-3 sm:gap-4 lg:gap-[17px] w-full flex-1">
+                                    <div className="w-full flex justify-start items-start">
+                                        <Image
+                                            className="w-[20px] h-[15px] sm:w-[24px] sm:h-[18px] lg:w-[32px] lg:h-[24px] object-contain flex-shrink-0 mt-1"
+                                            width={32}
+                                            height={24}
+                                            sizes="100vw"
+                                            alt="Quote start"
+                                            src="/quote-left.png"
+                                        />
+                                    </div>
+                                    <div className="w-full flex-1 px-1 sm:px-2 lg:px-4">
+                                        <p className="m-0 text-sm sm:text-base md:text-lg lg:text-xl xl:text-[25px] font-normal font-[inherit] text-left leading-relaxed">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ecommodo consequat. Duis aute irure dolor in reprehenderit
+                                        </p>
+                                    </div>
+                                    <div className="w-full flex justify-end items-end">
+                                        <Image
+                                            className="w-[20px] h-[15px] sm:w-[24px] sm:h-[18px] lg:w-[32px] lg:h-[24px] object-contain flex-shrink-0 mb-1"
+                                            width={32}
+                                            height={24}
+                                            sizes="100vw"
+                                            alt="Quote end"
+                                            src="/quote-right.png"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="w-full flex justify-start">
+                                    <div className="flex flex-row items-center justify-start gap-1 sm:gap-2 lg:gap-[9px]">
+                                        {[...Array(4)].map((_, index) => (
+                                            <Image
+                                                key={index}
+                                                className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 object-contain"
+                                                width={24}
+                                                height={24}
+                                                sizes="100vw"
+                                                alt="Star rating"
+                                                src="/star.jpg"
+                                            />
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    {/* Second Testimonial */}
+                    <div className="w-full max-w-none xl:max-w-[571px] relative shadow-[1px_3px_5px_6px_rgba(0,_0,_0,_0.25)] rounded-[15px] sm:rounded-[20px] bg-[#fff] mx-auto">
+                        <section className="min-h-[350px] sm:min-h-[400px] lg:h-[501px] w-full relative text-center text-[#000] font-['Inria_Serif'] p-4 sm:p-6 lg:p-8">
+                            <div className="flex flex-col items-center justify-start gap-4 sm:gap-6 lg:gap-[23px] relative z-[1] h-full">
+                                <h2 className="m-0 text-xl sm:text-2xl md:text-3xl lg:text-[32px] xl:text-[40px] font-bold font-[inherit] w-full mb-2 sm:mb-0">
+                                    Hotel Prince
+                                </h2>
+
+                                <div className="flex flex-col items-start justify-start gap-3 sm:gap-4 lg:gap-[17px] w-full flex-1">
+                                    <div className="w-full flex justify-start">
+                                        <Image
+                                            className="w-[20px] h-[15px] sm:w-[24px] sm:h-[18px] lg:w-[32px] lg:h-[24px] xl:w-[48px] xl:h-[36px] object-contain"
+                                            width={48}
+                                            height={36}
+                                            sizes="100vw"
+                                            alt="Quote start"
+                                            src="/quote-left.png"
+                                        />
+                                    </div>
+
+                                    <div className="w-full flex-1 px-1 sm:px-2">
+                                        <p className="m-0 text-sm sm:text-base md:text-lg lg:text-xl xl:text-[25px] font-normal font-[inherit] text-left leading-relaxed">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ecommodo consequat. Duis aute irure dolor in reprehenderit
+                                        </p>
+                                    </div>
+
+                                    <div className="w-full flex justify-end">
+                                        <Image
+                                            className="w-[20px] h-[15px] sm:w-[24px] sm:h-[18px] lg:w-[32px] lg:h-[24px] xl:w-[48px] xl:h-[36px] object-contain"
+                                            width={48}
+                                            height={36}
+                                            sizes="100vw"
+                                            alt="Quote end"
+                                            src="/quote-right.png"
+                                        />
+                                    </div>
+                                </div>
+
+                                <div className="w-full flex justify-start">
+                                    <div className="flex flex-row items-center justify-start gap-1 sm:gap-2 lg:gap-[9px]">
+                                        {[...Array(4)].map((_, index) => (
+                                            <Image
+                                                key={index}
+                                                className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 object-contain"
+                                                width={24}
+                                                height={24}
+                                                sizes="100vw"
+                                                alt="Star rating"
+                                                src="/star.jpg"
+                                            />
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                {/* Right Arrow Icon */}
+                <div className="h-[50px] w-[50px] sm:h-[60px] sm:w-[60px] lg:h-[65px] lg:w-[59px] relative flex-shrink-0 hidden lg:block cursor-pointer hover:scale-105 transition-transform">
+                    <div className="absolute top-[0px] left-[0px] shadow-[4px_2px_7px_1px_rgba(0,_0,_0,_0.25)] rounded-[15px] lg:rounded-[20px] bg-[#fffafa] w-full h-full" />
+                    <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[20px] sm:w-[25px] lg:w-[27.5px] h-[15px] sm:h-[18px] lg:h-[20px] z-[1] flex items-center justify-center">
                         <Image
-                            className="w-full h-full z-[1] object-cover absolute left-[1px] top-[0px] [transform:scale(31.571)]"
-                            width={27.5}
-                            height={0.7}
+                            className="w-full h-full object-contain"
+                            width={28}
+                            height={20}
                             sizes="100vw"
-                            alt=""
-                            src="/quote-right.png"
+                            alt="Next testimonial"
+                            src="/ArrowRight.svg"
                         />
                     </div>
                 </div>
             </div>
-            <div className="self-stretch flex flex-row items-start justify-center py-0 pl-5 pr-[23px]">
+
+            {/* Mobile Navigation Arrows */}
+            <div className="flex lg:hidden flex-row items-center justify-center gap-4 w-full">
+                <div className="h-[50px] w-[50px] relative flex-shrink-0 cursor-pointer hover:scale-105 transition-transform">
+                    <div className="absolute top-[0px] left-[0px] shadow-[4px_2px_7px_1px_rgba(0,_0,_0,_0.25)] rounded-[15px] bg-[#fffafa] w-full h-full" />
+                    <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[20px] h-[15px] z-[1] flex items-center justify-center">
+                        <Image
+                            className="w-full h-full object-contain"
+                            width={20}
+                            height={15}
+                            sizes="100vw"
+                            alt="Previous testimonial"
+                            src="/ArrowLeft.svg"
+                        />
+                    </div>
+                </div>
+                <div className="h-[50px] w-[50px] relative flex-shrink-0 cursor-pointer hover:scale-105 transition-transform">
+                    <div className="absolute top-[0px] left-[0px] shadow-[4px_2px_7px_1px_rgba(0,_0,_0,_0.25)] rounded-[15px] bg-[#fffafa] w-full h-full" />
+                    <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[20px] h-[15px] z-[1] flex items-center justify-center">
+                        <Image
+                            className="w-full h-full object-contain"
+                            width={20}
+                            height={15}
+                            sizes="100vw"
+                            alt="Next testimonial"
+                            src="/ArrowRight.svg"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            {/* Navigation Dots */}
+            <div className="self-stretch flex flex-row items-center justify-center py-0 px-4">
                 <Image
-                    className="h-5 w-full relative z-[1]"
+                    className="h-2 w-12 sm:h-3 sm:w-16 md:h-4 md:w-20 lg:h-5 lg:w-24 xl:w-32 object-contain"
                     width={100}
                     height={40}
-                    alt=""
+                    alt="Navigation dots"
                     src="/dots-horizontal.svg"
                 />
             </div>

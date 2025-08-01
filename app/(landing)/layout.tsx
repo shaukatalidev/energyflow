@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import Footer from "../_components/footer/Footer";
 import Navbar from "../_components/navbar/Navbar";
 import Loading from "./loading";
+import Footer2 from "../_components/footer/Footer2";
 
 const DashboardLayout = async ({ children }: { children: React.ReactNode }) => {
   return (
@@ -12,7 +13,7 @@ const DashboardLayout = async ({ children }: { children: React.ReactNode }) => {
 
       <div className="sm:pt-[105px] overflow-hidden pt-16 h-full w-screen min-h-screen">
         <Suspense fallback={<Loading />}>{children}</Suspense>
-        <Footer />
+        <Footer2 />
       </div>
     </div>
   );
